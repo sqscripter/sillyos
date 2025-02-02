@@ -1,0 +1,195 @@
+v<xml>
+    <title>Your HTML title</title>
+    <htmlData><![CDATA[<html>
+
+  <head>
+    <title>sigma</title>
+    <script
+      src="https://kit.fontawesome.com/a2eca08f79.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"
+      integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <div id="taskbar">
+      <!-- apps-->
+      <div class="app" id="chrome">
+        <img
+          src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/google-logo.png?v=1738437961665"
+          style="
+            user-select: none;
+            height: 70%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        />
+      </div>
+      <div class="app" id="settings">
+        <img
+          src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/Windows_Settings_icon.svg.png?v=1738441683146"
+          style="
+            user-select: none;
+            height: 70%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        />
+      </div>
+      <div class="app">
+        <img
+          src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/google-logo.png?v=1738437961665"
+          style="
+            user-select: none;
+            height: 70%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        />
+      </div>
+      <div class="app">
+        <img
+          src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/google-logo.png?v=1738437961665"
+          style="
+            user-select: none;
+            height: 70%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        />
+      </div>
+      <div class="app">
+        <img
+          src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/google-logo.png?v=1738437961665"
+          style="
+            user-select: none;
+            height: 70%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        />
+      </div>
+      <div class="app">
+        <img
+          src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/google-logo.png?v=1738437961665"
+          style="
+            user-select: none;
+            height: 70%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        />
+      </div>
+      <h3>
+        
+      </h3>
+    </div>
+
+    <div class="window" id="chromeWin" style="width: 85%; height: 80%">
+      <div class="windowTop">
+        <h3 class="thin windowTitle">Chrome</h3>
+        <input
+          id="chromeURL"
+          class="windowInput"
+          placeholder="Enter URL here..."
+        />
+        <button class="windowButton close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="windowButton max">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="windowContent">
+        <iframe
+          src="https://google.com/search?igu=1"
+          class="windowIframe"
+          id="chromeIframe"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="window" id="settingsWin" style="width: 85%; height: 80%">
+      <div class="windowTop">
+        <h3 class="thin windowTitle">Settings</h3>
+        <!--<button class="windowButton close"><i class="fa-solid fa-xmark"></i></button>-->
+         <button class="windowButton close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="windowButton max">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+      <div class="windowContent" id="settingsContent">
+        
+        <h1 class="apptitles">Backgrounds:</h1>
+        
+        <div class="backgroundOption" onclick="setbgRedkali()">
+          <img
+            src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/probably%20kali%20idk.png?v=1738436972273"
+            class="backgroundImage"
+          />
+          <h2>Red/Grey Kali</h2>
+        </div>
+        <div class="backgroundOption" onclick="setbgDarkwin()">
+          <img
+            src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/darkmode11.jpg?v=1738448781207"
+            class="backgroundImage" />
+          <h2>Dark Windows</h2>
+        </div>
+        
+         <div class="backgroundOption" onclick="setbgPurpledark()">
+          <img
+            src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/01-Purple_DM-4K.png?v=1738448021714"
+            class="backgroundImage" />
+          <h2>Purple Dark Waves</h2>
+        </div>
+        
+         <div class="backgroundOption" onclick="setbgPurplewin()">
+          <img
+            src="https://cdn.glitch.global/a94acf2c-d243-4085-ad96-c4650bfc61ae/zia8vbwd0zl71.webp?v=1738456091310"
+            class="backgroundImage" />
+          <h2>Minimalist Purple Windows</h2>
+        </div>
+        
+         
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+
+        </html>
+     ]]>
+    </htmlData>
+</xml>
